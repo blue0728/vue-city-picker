@@ -47,26 +47,20 @@
 	    },
 	    computed: {
 	      	linkageData: function() {
-	      		let resultData = [];
 
-	      		if(this.data.length == 0){
+	      		this.data = this.data.length > 0 ? this.data : [province, city, area]
 
-				 	const provinceList = province;
+	      		const provinceList = this.data[0]
 
-		      		const cityList = city.filter((item) => {
-					 	return item.parentId === provinceList[this.tempIndex[0]].value
-					})
+      			const cityList = this.data[1].filter((item) => {
+				 	return item.parentId === provinceList[this.tempIndex[0]].value
+				})
 
-					const areaList = area.filter((item) => {
-						return item.parentId === cityList[this.tempIndex[1]].value
-					})
+				const areaList = this.data[2].filter((item) => {
+					return item.parentId === cityList[this.tempIndex[1]].value
+				})
 
-					resultData = [provinceList, cityList, areaList]
-	      			
-	      		}else{
-	      			resultData = this.data;
-	      		}
-		        return resultData
+		        return [provinceList, cityList, areaList]
 	      	}
 	    },
 
@@ -85,7 +79,6 @@
 	        	this.$refs.picker.show()
 	      	},
 	      	handleSelect: function() {
-	      		console.log(arguments)
 		        this.$emit('select', ...arguments)
 		    },
 	      	handleChange: function(i, newIndex){
@@ -95,7 +88,6 @@
 		            	this.$refs.picker.scrollTo(j, 0)
 		          	}
 		          	this.tempIndex.splice(i, 1, newIndex)
-		          	console.log(this.tempIndex)
 		        }
 	      	}
 		}

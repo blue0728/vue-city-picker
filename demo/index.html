@@ -17,190 +17,14 @@
     <div id="app">
     	<div>
 	    	<div @click="show">{{msg}}</div>
-	    	<vue-city-picker ref="picker" @select="select" @show="showEven" @cancel="cancle" @change="change" ></vue-city-picker>	
+	    	<vue-city-picker ref="picker" :data="data1" @select="select" @show="showEven" @cancel="cancle" @change="change" ></vue-city-picker>	
     	</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="../dist/vue-city-picker.js"></script>
+    <script src="../dist/data.js"></script>
     <script>
-let data1 = [[
-      {
-        text: '剧毒',
-        value: 1
-      }, {
-        text: '蚂蚁',
-        value: 2
-      },
-      {
-        text: '幽鬼',
-        value: 3
-      },
-      {
-        text: '主宰',
-        value: 4
-      },
-      {
-        text: '卡尔',
-        value: 5
-      },
-      {
-        text: '宙斯',
-        value: 6
-      },
-      {
-        text: '巫医',
-        value: 7
-      }, {
-        text: '巫妖',
-        value: 8
-      },
-      {
-        text: '神谕者',
-        value: 9
-      },
-      {
-        text: '撼地神牛',
-        value: 10
-      },
-      {
-        text: '蓝胖子',
-        value: 11
-      },
-      {
-        text: '水晶室女',
-        value: 12
-      },
-      {
-        text: '莉娜',
-        value: 13
-      },
-      {
-        text: '斯拉克',
-        value: 14
-      },
-      {
-        text: '斯拉达',
-        value: 15
-      }
-    ],[
-      {
-        text: '剧毒',
-        value: 1
-      }, {
-        text: '蚂蚁',
-        value: 2
-      },
-      {
-        text: '幽鬼',
-        value: 3
-      },
-      {
-        text: '主宰',
-        value: 4
-      },
-      {
-        text: '卡尔',
-        value: 5
-      },
-      {
-        text: '宙斯',
-        value: 6
-      },
-      {
-        text: '巫医',
-        value: 7
-      }, {
-        text: '巫妖',
-        value: 8
-      },
-      {
-        text: '神谕者',
-        value: 9
-      },
-      {
-        text: '撼地神牛',
-        value: 10
-      },
-      {
-        text: '蓝胖子',
-        value: 11
-      },
-      {
-        text: '水晶室女',
-        value: 12
-      },
-      {
-        text: '莉娜',
-        value: 13
-      },
-      {
-        text: '斯拉克',
-        value: 14
-      },
-      {
-        text: '斯拉达',
-        value: 15
-      }
-    ],[
-      {
-        text: '剧毒',
-        value: 1
-      }, {
-        text: '蚂蚁',
-        value: 2
-      },
-      {
-        text: '幽鬼',
-        value: 3
-      },
-      {
-        text: '主宰',
-        value: 4
-      },
-      {
-        text: '卡尔',
-        value: 5
-      },
-      {
-        text: '宙斯',
-        value: 6
-      },
-      {
-        text: '巫医',
-        value: 7
-      }, {
-        text: '巫妖',
-        value: 8
-      },
-      {
-        text: '神谕者',
-        value: 9
-      },
-      {
-        text: '撼地神牛',
-        value: 10
-      },
-      {
-        text: '蓝胖子',
-        value: 11
-      },
-      {
-        text: '水晶室女',
-        value: 12
-      },
-      {
-        text: '莉娜',
-        value: 13
-      },
-      {
-        text: '斯拉克',
-        value: 14
-      },
-      {
-        text: '斯拉达',
-        value: 15
-      }
-    ]]
+let data1 = [province, city, area]
 
     var app = new Vue({
         el: '#app',
@@ -209,9 +33,6 @@ let data1 = [[
         		msg: 'Hello VUE~',
             selectedIndex: [3,0,0,0]
         	}
-        },
-        mounted: function(){
-            //this.$refs['picker'].setData([data1])
         },
         methods: {
             show: function(){

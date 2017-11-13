@@ -711,25 +711,19 @@ exports.default = {
 		linkageData: function linkageData() {
 			var _this = this;
 
-			var resultData = [];
+			this.data = this.data.length > 0 ? this.data : [_cityData.province, _cityData.city, _cityData.area];
 
-			if (this.data.length == 0) {
+			var provinceList = this.data[0];
 
-				var provinceList = _cityData.province;
+			var cityList = this.data[1].filter(function (item) {
+				return item.parentId === provinceList[_this.tempIndex[0]].value;
+			});
 
-				var cityList = _cityData.city.filter(function (item) {
-					return item.parentId === provinceList[_this.tempIndex[0]].value;
-				});
+			var areaList = this.data[2].filter(function (item) {
+				return item.parentId === cityList[_this.tempIndex[1]].value;
+			});
 
-				var areaList = _cityData.area.filter(function (item) {
-					return item.parentId === cityList[_this.tempIndex[1]].value;
-				});
-
-				resultData = [provinceList, cityList, areaList];
-			} else {
-				resultData = this.data;
-			}
-			return resultData;
+			return [provinceList, cityList, areaList];
 		}
 	},
 
@@ -748,7 +742,6 @@ exports.default = {
 			this.$refs.picker.show();
 		},
 		handleSelect: function handleSelect() {
-			console.log(arguments);
 			this.$emit.apply(this, ['select'].concat(Array.prototype.slice.call(arguments)));
 		},
 		handleChange: function handleChange(i, newIndex) {
@@ -758,7 +751,6 @@ exports.default = {
 					this.$refs.picker.scrollTo(j, 0);
 				}
 				this.tempIndex.splice(i, 1, newIndex);
-				console.log(this.tempIndex);
 			}
 		}
 	}
