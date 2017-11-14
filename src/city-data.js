@@ -1517,6 +1517,110 @@ export const city = [{
 	value: 659000,
 	text: '自治区直辖县级行政区划',
 	parentId: 650000
+}, {
+	value: 810100,
+	text: '香港岛',
+	parentId: 810000
+}, {
+	value: 810200,
+	text: '九龙半岛',
+	parentId: 810000
+}, {
+	value: 810300,
+	text: '新界',
+	parentId: 810000
+}, {
+	value: 820100,
+	text: '澳门半岛',
+	parentId: 820000
+}, {
+	value: 820200,
+	text: '离岛',
+	parentId: 820000
+}, {
+	value: 820300,
+	text: '无堂区划分区域',
+	parentId: 820000
+}, {
+	value: 710100,
+	text: '台北市',
+	parentId: 710000
+}, {
+	value: 710200,
+	text: '髙雄市',
+	parentId: 710000
+}, {
+	value: 710300,
+	text: '基隆市',
+	parentId: 710000
+}, {
+	value: 710400,
+	text: '台中市',
+	parentId: 710000
+}, {
+	value: 710500,
+	text: '台南市',
+	parentId: 710000
+}, {
+	value: 710600,
+	text: '新竹市',
+	parentId: 710000
+}, {
+	value: 710700,
+	text: '嘉义市',
+	parentId: 710000
+}, {
+	value: 710800,
+	text: '新北市',
+	parentId: 710000
+}, {
+	value: 710900,
+	text: '宜兰县',
+	parentId: 710000
+}, {
+	value: 711000,
+	text: '桃园县',
+	parentId: 710000
+}, {
+	value: 711100,
+	text: '新竹县',
+	parentId: 710000
+}, {
+	value: 711200,
+	text: '苗栗县',
+	parentId: 710000
+}, {
+	value: 711300,
+	text: '彰化县',
+	parentId: 710000
+}, {
+	value: 711400,
+	text: '南投县',
+	parentId: 710000
+}, {
+	value: 711500,
+	text: '云林县',
+	parentId: 710000
+}, {
+	value: 711600,
+	text: '嘉义县',
+	parentId: 710000
+}, {
+	value: 711700,
+	text: '屏东县',
+	parentId: 710000
+}, {
+	value: 711800,
+	text: '台东县',
+	parentId: 710000
+}, {
+	value: 711900,
+	text: '花莲县',
+	parentId: 710000
+}, {
+	value: 712000,
+	text: '澎湖县',
+	parentId: 710000
 }];
 
 export const area = [{
@@ -14051,4 +14155,123 @@ export const area = [{
 	value: 659004,
 	text: '五家渠市',
 	parentId: 659000
+}, {
+	value: 810101,
+	text: '中西区',
+	parentId: 810100
+}, {
+	value: 810102,
+	text: '湾仔区',
+	parentId: 810100
+}, {
+	value: 810103,
+	text: '东区',
+	parentId: 810100
+}, {
+	value: 810104,
+	text: '南区',
+	parentId: 810100
+}, {
+	value: 810201,
+	text: '油尖旺区',
+	parentId: 810200
+}, {
+	value: 810202,
+	text: '深水埗区',
+	parentId: 810200
+}, {
+	value: 810203,
+	text: '九龙城区',
+	parentId: 810200
+}, {
+	value: 810204,
+	text: '黄大仙区',
+	parentId: 810200
+}, {
+	value: 810205,
+	text: '观塘区',
+	parentId: 810200
+}, {
+	value: 810301,
+	text: '北区',
+	parentId: 810300
+}, {
+	value: 810302,
+	text: '大埔区',
+	parentId: 810300
+}, {
+	value: 810303,
+	text: '沙田区',
+	parentId: 810300
+}, {
+	value: 810304,
+	text: '西贡区',
+	parentId: 810300
+}, {
+	value: 810305,
+	text: '荃湾区',
+	parentId: 810300
+}, {
+	value: 810306,
+	text: '屯门区',
+	parentId: 810300
+}, {
+	value: 810307,
+	text: '元朗区',
+	parentId: 810300
+}, {
+	value: 810308,
+	text: '葵青区',
+	parentId: 810300
+}, {
+	value: 810309,
+	text: '离岛区',
+	parentId: 810300
+}, {
+	value: 820101,
+	text: '花地玛堂区',
+	parentId: 820100
+}, {
+	value: 820102,
+	text: '圣安多尼堂区',
+	parentId: 820100
+}, {
+	value: 820103,
+	text: '大堂区',
+	parentId: 820100
+}, {
+	value: 820104,
+	text: '望德堂区',
+	parentId: 820100
+}, {
+	value: 820104,
+	text: '风顺堂区',
+	parentId: 820100
+}, {
+	value: 820201,
+	text: '嘉模堂区',
+	parentId: 820200
+}, {
+	value: 820202,
+	text: '圣方济各堂区',
+	parentId: 820200
+}, {
+	value: 820301,
+	text: '路氹城',
+	parentId: 820300
 }]
+
+
+// , {
+// 	value: 820100,
+// 	text: '澳门半岛',
+// 	parentId: 820000
+// }, {
+// 	value: 820200,
+// 	text: '离岛',
+// 	parentId: 820000
+// }, {
+// 	value: 820300,
+// 	text: '无堂区划分区域',
+// 	parentId: 820000
+// }

@@ -30,7 +30,7 @@
     	<div>
 	    	<div class="btn" @click="show">点击</div>
             <div>{{text}}</div>
-	    	<vue-city-picker ref="picker" :title="title" :cancel-txt="cancelTxt" :confirm-txt="confirmTxt" :selected-index="selectedIndex" :data="data" @select="select"></vue-city-picker>	
+	    	<vue-city-picker ref="picker" :data="data" :title="title" :cancel-txt="cancelTxt" :confirm-txt="confirmTxt" :selected-index="selectedIndex" @select="select"></vue-city-picker>	
     	</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

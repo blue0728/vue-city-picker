@@ -44,11 +44,8 @@
 	    },
 	    computed: {
 	      	linkageData: function() {
-
 	      		this.data = this.data.length > 0 ? this.data : [province, city, area]
-
 	      		const provinceList = this.data[0]
-
       			const cityList = this.data[1].filter((item) => {
 				 	return item.parentId === provinceList[this.tempIndex[0]].value
 				})
