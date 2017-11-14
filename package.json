@@ -1,26 +1,27 @@
 {
-	"name": "vue-picker",
-	"version": "1.0.0",
-	"description": "vue-city-picker component for vue.",
-	"main": "dist/vue-picker.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Serge",
-	"homepage": "https://github.com/blue0728/vue-picker#readme",
-	"license": "ISC",
-	"dependencies": {
-		"babel-core": "^6.26.0",
-		"babel-loader": "^7.1.2",
-		"babel-preset-es2015": "^6.24.1",
-		"babel-preset-stage-0": "^6.24.1",
-		"better-scroll": "^1.4.0",
-		"css-loader": "^0.28.7",
-		"extract-text-webpack-plugin": "^3.0.2",
-		"postcss-salad": "^2.0.1",
-		"vue": "^2.5.3",
-		"vue-loader": "^13.4.0",
-		"vue-template-compiler": "^2.5.3",
-		"webpack": "^3.8.1"
-	}
+  "name": "vue-picker",
+  "version": "1.0.0",
+  "description": "vue-city-picker component for vue.",
+  "main": "dist/vue-picker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Serge",
+  "homepage": "https://github.com/blue0728/vue-picker#readme",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "better-scroll": "^1.4.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "postcss-salad": "^2.0.1",
+    "vue": "^2.5.3",
+    "vue-bspicker": "^1.0.3",
+    "vue-loader": "^13.4.0",
+    "vue-template-compiler": "^2.5.3",
+    "webpack": "^3.8.1"
+  }
 }

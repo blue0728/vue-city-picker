@@ -1,6 +1,3 @@
-<style scoped>
-
-</style>
 <template>
 	<vue-picker :selected-index="selectedIndex" @select="handleSelect" :data="linkageData"
           ref="picker" :title="title" @change="handleChange" :cancelTxt="cancelTxt" :confirmTxt="confirmTxt"></vue-picker>	
@@ -8,7 +5,7 @@
 <script>
 
 	import BScroll from 'better-scroll';
-	import vuePicker from './vue-picker.js'
+	import vuePicker from 'vue-bspicker'
 	import {province, city, area} from './city-data.js'
 
   	const COMPONENT_NAME = 'vue-city-picker'	
@@ -56,17 +53,21 @@
 				 	return item.parentId === provinceList[this.tempIndex[0]].value
 				})
 
-				const areaList = this.data[2].filter((item) => {
-					return item.parentId === cityList[this.tempIndex[1]].value
-				})
+				let areaList = [];
 
+      			if(cityList.length > 0){
+					areaList = this.data[2].filter((item) => {
+						return item.parentId === cityList[this.tempIndex[1]].value
+					})
+      			}
+				
 		        return [provinceList, cityList, areaList]
 	      	}
 	    },
 
 		data: function(){
 			return {
-		        tempIndex: [0, 0, 0]
+		        tempIndex: this.selectedIndex.slice()
 		    }
 		},
 		watch: {

@@ -957,9 +957,10 @@ exports.default = {
 			this.pickerData.forEach(function (item, index) {
 				var _index = _this4.wheels[index].getSelectedIndex();
 				_this4.pickerSelectedIndex[index] = _index; //选择下标
-				_this4.pickerSelectedText[index] = _this4.pickerData[index][_index].text; //选中text
-				_this4.pickerSelectedVal[index] = _this4.pickerData[index][_index].value; //选中vlue
-				_this4.pickerSelectedItem[index] = _this4.pickerData[index][_index]; //选中完整对象
+				console.log(_this4.pickerData[index][_index]);
+				_this4.pickerSelectedText[index] = _this4.pickerData[index][_index] ? _this4.pickerData[index][_index].text : ''; //选中text
+				_this4.pickerSelectedVal[index] = _this4.pickerData[index][_index] ? _this4.pickerData[index][_index].value : ''; //选中vlue
+				_this4.pickerSelectedItem[index] = _this4.pickerData[index][_index] ? _this4.pickerData[index][_index] : null; //选中完整对象
 			});
 
 			this.$emit(EVENT_SELECT, this.pickerSelectedVal, this.pickerSelectedIndex, this.pickerSelectedText, this.pickerSelectedItem);
