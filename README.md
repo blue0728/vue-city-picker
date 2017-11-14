@@ -1,7 +1,7 @@
 
 ## Install
 ```
-npm install vue-citys-bspicker --save
+npm install vue-city-bspicker --save
 
 ```
 
