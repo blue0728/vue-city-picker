@@ -1,13 +1,25 @@
 {
-  "name": "vue-picker",
+  "name": "vue-city-bspicker",
   "version": "1.0.0",
   "description": "vue-city-picker component for vue.",
-  "main": "dist/vue-picker.js",
+  "main": "dist/vue-city-picker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blue0728/vue-city-picker.git"
+  },
+  "keywords": [
+    "vue",
+    "city picker"
+  ],
   "author": "Serge",
-  "homepage": "https://github.com/blue0728/vue-picker#readme",
+  "homepage": "https://github.com/blue0728/vue-city-picker#readme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blue0728/vue-city-picker/issues"
+  },
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.26.0",
