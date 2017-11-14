@@ -7,7 +7,7 @@ npm install vue-city-bspicker --save
 
 ## Info
 
-`vue-citys-bspicker` 使用了 `[vue-bspicker]`(https://github.com/blue0728/vue-picker)  `better-scroll`  [@ustbhuangyi](https://github.com/ustbhuangyi)，非常感谢
+`vue-city-bspicker` 使用了 `[vue-bspicker]`(https://github.com/blue0728/vue-picker)  `better-scroll`  [@ustbhuangyi](https://github.com/ustbhuangyi)，非常感谢
 
 ## API
 
