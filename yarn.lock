@@ -3998,9 +3998,9 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-bspicker@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/vue-bspicker/-/vue-bspicker-1.0.2.tgz#e44e4d8a70f3d1c0661219b4a936ff790e612f89"
+vue-bspicker@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-bspicker/-/vue-bspicker-1.0.3.tgz#33507812a8c50911d5ddf50de69953c3ea48cfd9"
   dependencies:
     babel-core "^6.26.0"
     babel-loader "^7.1.2"

@@ -12,39 +12,14 @@ module.exports = {
 		path: path.resolve(__dirname, './dist'),
 		publicPath: '/dist/',
 		filename: 'vue-city-picker.js',
-		library: 'vuePicker',
+		library: 'vueCityPicker',
 		libraryTarget: 'umd',
 		umdNamedDefine: true
 	},
 	module: {
 		loaders: [{
 			test: /\.vue$/,
-			loader: 'vue-loader',
-			options: {
-				loaders: {
-					//css: ExtractTextPlugin.extract('css-loader'),
-				},
-				postcss: function() {
-					return [require('postcss-salad')({
-						features: {
-							bem: {
-								defaultNamespace: undefined, // default namespace to use, none by default 
-								style: 'suit', // suit or bem, suit by default, 
-								separators: {
-									descendent: '__', // overwrite any default separator for chosen style 
-									modifier: '--'
-								},
-								shortcuts: {
-									utility: 'util', //override at-rule name 
-									descendent: 'e',
-									modifier: 'm',
-									component: 'b'
-								}
-							}
-						}
-					})];
-				}
-			},
+			loader: 'vue-loader'
 		}, {
 			test: /\.js$/,
 			loader: 'babel-loader',
